@@ -1,0 +1,136 @@
+.client-container {
+    margin-top: 80px;
+    text-align: center;
+    padding: 20px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+ 
+  .input1, .input2, .input3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .input1 input, .input2 input, .input3 input {
+    width: 35%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #cccaca;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .client-container button {
+    width: 20%;
+    background-color: #162A62;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .client-container button:hover {
+    background-color: #08122e;
+  }
+  
+  .liste {
+    margin-top: 30px;
+  }
+  
+  .liste table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .liste th, .liste td {
+    padding: 12px;
+    border: 1px solid black;
+    text-align: center;
+  }
+  
+  .liste th {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  .liste button {
+    background-color: #ffff;
+    color: black;
+    border: none;
+  }
+  
+  .liste button:hover {
+    background-color: #cccaca;
+    padding: 3px;
+    transform: scale(1.05);
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .client-container {
+      max-width: 50%;
+    }
+  
+    .input1, .input2, .input3 {
+      flex-direction: column;
+    }
+  
+    .input1 input, .input2 input, .input3 input {
+      width: 100%;
+    }
+  
+    .client-container button {
+      width: 30%;
+    }
+  }
+ 
+  @media (max-width: 768px) {
+    .client-container {
+      max-width: 50%;
+      padding: 15px;
+    }
+  
+    .input1, .input2, .input3 {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .input1 input, .input2 input, .input3 input {
+      width: 100%;
+    }
+  
+    .button-container {
+      justify-content: center;
+    }
+  
+    .client-container button {
+      width: 100%;
+    }
+  
+    .liste th, .liste td {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .liste table {
+      font-size: 12px;
+    }
+  }
+  

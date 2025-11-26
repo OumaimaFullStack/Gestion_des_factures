@@ -1,0 +1,96 @@
+.inscription-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.inscription-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.inscription-container input,
+.inscription-container select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.inscription-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(97, 141, 178);
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.inscription-container button:hover {
+  background-color: #08122e;
+}
+
+.inscription-container input:focus,
+.inscription-container select:focus {
+  border-color: #162A62;
+  outline: none;
+}
+
+
+@media (max-width: 768px) {
+  .inscription-container {
+    max-width: 90%;
+    padding: 20px;
+    margin: 30px auto;
+  }
+
+  .inscription-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .inscription-container input,
+  .inscription-container select {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .inscription-container button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .inscription-container {
+    max-width: 95%;
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .inscription-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .inscription-container input,
+  .inscription-container select {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .inscription-container button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}

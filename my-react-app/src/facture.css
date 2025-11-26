@@ -1,0 +1,194 @@
+.facture-container {
+    margin-top: 80px;
+    text-align: center;
+    padding: 20px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .facture-container h2 {
+    text-align: left;
+    color: #222;
+    font-weight: bold;
+  }
+  
+  .facture-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .input4 select, 
+  .input4 input,
+  .input5 input,
+  .input5 select {
+    width: 30%;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #cccaca;
+    box-sizing: border-box;
+    margin-right: 30px;
+  }
+  
+  .facture-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .facture-button button {
+    background-color: #162A62;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 40px;
+  }
+  
+  .facture-button button:hover {
+    background-color: #001a44;
+  }
+  
+ 
+  .filtre-container{
+    display: flex;
+   justify-content: space-between;
+   gap: 20px;
+  }
+  .filtre-container input,select{
+    
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #cccaca;
+    box-sizing: border-box;
+    margin-top: 15px;
+  }
+  .filtre-button{
+    background-color: #162A62;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  .filtre-button:hover{
+    background-color: #001a44;
+  }
+  .liste-factures {
+    margin-top: 30px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid black;
+  }
+  
+  th {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  .buttons {
+    color: black;
+    border: none;
+  }
+  
+  .buttons:hover {
+    background-color: #cccaca;
+    padding: 3px;
+    transition: 0.3s;
+  }
+  
+
+  @media (max-width: 1024px) {
+    .facture-container {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .input4 select, 
+    .input4 input,
+    .input5 input,
+    .input5 select {
+      width: 45%;
+      margin-right: 10px;
+    }
+  
+    .facture-button {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .facture-container {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .input4 select, 
+    .input4 input,
+    .input5 input,
+    .input5 select {
+      width: 45%; 
+      margin-right: 10px;
+    }
+
+    .facture-button {
+      justify-content: center; 
+    }
+  }
+
+  
+  @media (max-width: 768px) {
+    .facture-container {
+      max-width: 90%; 
+      padding: 15px;   
+    }
+
+    .input4 select, 
+    .input4 input,
+    .input5 input,
+    .input5 select {
+      width: 100%;  
+      margin-right: 0;
+    }
+
+    .facture-button {
+      justify-content: center; 
+    }
+
+    table th, table td {
+      padding: 8px; 
+      font-size: 14px; 
+    }
+
+    .facture-button button {
+      width: 100%;
+      text-align: center;
+    }
+  }
